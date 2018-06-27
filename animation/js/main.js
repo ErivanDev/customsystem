@@ -51,16 +51,16 @@ function init () {
 
   var loader = new THREE.JSONLoader();
 
-  loader.load('./models/eva-erivan.json', function (geometry, materials) {
+  loader.load('./models/cabeca.json', function (geometry, materials) {
     materials.forEach(function (material) {
       material.skinning = true;
     });
-    character1 = new THREE.SkinnedMesh(
+    cabeca = new THREE.SkinnedMesh(
       geometry,
       new THREE.MeshFaceMaterial(materials)
     );
 
-    scene.add(character1);
+    scene.add(cabeca);
 
     isLoaded = true;
   });
@@ -103,6 +103,20 @@ function init () {
     );
 
     scene.add(perna);
+
+    isLoaded = true;
+  });
+
+  loader.load('./models/braco.json', function (geometry, materials) {
+    materials.forEach(function (material) {
+      material.skinning = true;
+    });
+    braco = new THREE.SkinnedMesh(
+      geometry,
+      new THREE.MeshFaceMaterial(materials)
+    );
+
+    scene.add(braco);
 
     isLoaded = true;
   });
@@ -260,18 +274,21 @@ function init () {
             var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
             var cube = new THREE.Mesh( geometry, material );
 
-            console.log(perna);
+            console.log(braco);
 
             // character1.skeleton.bones[0].add(  cube  );
-            character.skeleton.bones[9].add(character1.skeleton.bones[0]);
+            character.skeleton.bones[9].add(cabeca.skeleton.bones[0]);
             character.skeleton.bones[7].add(tronco.skeleton.bones[0]);
+            character.skeleton.bones[18].add(braco.skeleton.bones[0]);
             character.skeleton.bones[24].add(calca.skeleton.bones[0]);
             character.skeleton.bones[29].add(perna.skeleton.bones[0]);
 
-            character1.skeleton.bones[0].position.set(0,0,0);
-            character1.skeleton.bones[0].rotation.set(0,0,0);
+            cabeca.skeleton.bones[0].position.set(0,0,0);
+            cabeca.skeleton.bones[0].rotation.set(0,0,0);
             tronco.skeleton.bones[0].position.set(0,0,0);
             tronco.skeleton.bones[0].rotation.set(0,0,0);
+            braco.skeleton.bones[0].position.set(0,0,0);
+            braco.skeleton.bones[0].rotation.set(0,0,0);
             calca.skeleton.bones[0].position.set(0,0,0);
             calca.skeleton.bones[0].rotation.set(0,0,0);
             perna.skeleton.bones[0].position.set(0,0,0);
@@ -410,6 +427,31 @@ function init () {
   });
 
 }
+
+window.addEventListener("keypress", 
+
+  function change(event){
+    if(event.keyCode == 101){
+      scene.children.splice(6,1);
+      loader.load('./models/cabeca2.json', function (geometry, materials) {
+        materials.forEach(function (material) {
+          material.skinning = true;
+        });
+        novo = new THREE.SkinnedMesh(
+          geometry,
+          new THREE.MeshFaceMaterial(materials)
+        );
+
+        scene.add(novo);
+
+        character.skeleton.bones[9].add(novo.skeleton.bones[0]);
+        novo.skeleton.bones[0].position.set(0,0,0);
+        novo.skeleton.bones[0].rotation.set(0,0,0);
+      });
+    }
+  }
+
+);
 
 function fadeAction (name) {
   var from = action[ activeActionName ].play();
