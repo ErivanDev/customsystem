@@ -1,0 +1,339 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 1497,
+            "max" : [
+                978
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 979,
+            "max" : [
+                0.3176324665546417,
+                1.7035763263702393,
+                0.2960125505924225
+            ],
+            "min" : [
+                -0.5184440612792969,
+                0.9321394562721252,
+                -0.44191092252731323
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 979,
+            "max" : [
+                0.9922323822975159,
+                0.9666342735290527,
+                0.9977350831031799
+            ],
+            "min" : [
+                -0.9910107254981995,
+                -0.978961169719696,
+                -0.9893413782119751
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 979,
+            "max" : [
+                0.9650736451148987,
+                0.9802775979042053
+            ],
+            "min" : [
+                0.026328489184379578,
+                0.020929455757141113
+            ],
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 979,
+            "max" : [
+                0,
+                0,
+                0,
+                0
+            ],
+            "min" : [
+                0,
+                0,
+                0,
+                0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 979,
+            "max" : [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "min" : [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1,
+            "max" : [
+                2.2040271759033203,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.2040276527404785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.2040271759033203,
+                0.0,
+                0.0,
+                -2.3342864513397217,
+                0.0,
+                1.0
+            ],
+            "min" : [
+                2.2040271759033203,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.2040276527404785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.2040271759033203,
+                0.0,
+                0.0,
+                -2.3342864513397217,
+                0.0,
+                1.0
+            ],
+            "type" : "MAT4"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2994,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11748,
+            "byteOffset" : 2996,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11748,
+            "byteOffset" : 14744,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7832,
+            "byteOffset" : 26492,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7832,
+            "byteOffset" : 34324,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15664,
+            "byteOffset" : 42156,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 57820
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 57884,
+            "uri" : "EvaOriginal.bin"
+        }
+    ],
+    "images" : [
+        {
+            "name" : "eva-texture",
+            "uri" : "eva-texture.png"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Eva",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Body",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "JOINTS_0" : 4,
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TEXCOORD_0" : 3,
+                        "WEIGHTS_0" : 5
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "children" : [
+                4
+            ],
+            "name" : "Armature",
+            "scale" : [
+                0.45371484756469727,
+                0.45371484756469727,
+                0.45371484756469727
+            ],
+            "translation" : [
+                0.0,
+                1.0591003894805908,
+                -0.0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Body",
+            "rotation" : [
+                -0.7071068286895752,
+                0.0,
+                -0.0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                2.2040271759033203,
+                2.2040278911590576,
+                2.2040271759033203
+            ],
+            "translation" : [
+                0.0,
+                0.0,
+                3.3342864513397217
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.48170700669288635,
+                0.3342514932155609,
+                -0.21292175352573395,
+                0.7816000580787659
+            ],
+            "scale" : [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation" : [
+                7.481131553649902,
+                5.334731578826904,
+                6.503173351287842
+            ]
+        },
+        {
+            "name" : "Lamp",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558802962303162,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "scale" : [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation" : [
+                1.3664848804473877,
+                6.734507083892822,
+                5.380312442779541
+            ]
+        },
+        {
+            "children" : [
+                1
+            ],
+            "name" : "Armature_Bone"
+        }
+    ],
+    "samplers" : [
+        {}
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                3,
+                2
+            ]
+        }
+    ],
+    "skins" : [
+        {
+            "inverseBindMatrices" : 6,
+            "joints" : [
+                4
+            ],
+            "skeleton" : 0
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ]
+}
